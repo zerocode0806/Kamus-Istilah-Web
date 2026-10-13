@@ -1,0 +1,228 @@
+
+:root {
+
+    --text: #202124;
+    --muted: #666b73;
+    --border: #e5e7eb;
+    --blue: #42b0ff;
+    --sec: #666;
+    --bd: #ddd;
+    --soft: #f7f7f7;
+
+    --radius: 12px;
+    --transition: 0.25s ease;
+    --shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--background);
+    color: var(--text);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.container {
+    width: 860px;
+    max-width: calc(100% - 40px);
+    margin: 0 auto;
+}
+
+
+/* Header dan Navigasi bar */
+header {
+    border-bottom: 1px solid var(--bd);
+}
+header h1 {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 22px 20px 6px;
+    font-size: 2rem;
+    color: #111;
+}
+
+nav {
+    background: var(--soft);
+    border-top: 1px solid #eee;
+}
+nav ul {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 22px;
+    font:
+    0.9rem Arial,
+    sans-serif;
+}
+nav a {
+    color: #020202;
+    text-decoration: none;
+}
+nav a:hover,
+nav a:focus-visible {
+    color: var(--blue);
+    text-decoration: underline;
+}
+/* Isi konten */
+
+.content {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.category-intro {
+    margin-bottom: 28px;
+}
+
+
+.category-intro h2 {
+    margin: 0 0 12px;
+    font-size: clamp(27px, 4vw, 32px);
+    line-height: 1.35;
+}
+
+.category-intro p {
+    max-width: 680px;
+    margin: 0;
+    color: var(--muted);
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* Border atau kotak kategori */
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    align-items: stretch;
+}
+
+.category-card {
+    min-width: 0;
+    padding: 22px;
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.025);
+
+    transition:
+        transform var(--transition),
+        box-shadow var(--transition),
+        border-color var(--transition);
+}
+
+.category-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--blue);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Ikon per kategori */
+
+.category-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 48px;
+    height: 48px;
+    margin-bottom: 16px;
+
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.icon-html {
+    background: #fff0e8;
+    color: #df5727;
+}
+
+.icon-css {
+    background: #e9f1ff;
+    color: #2764c4;
+}
+
+.icon-js {
+    background: #fff8d9;
+    color: #947300;
+}
+
+.icon-network {
+    background: #e7f7ee;
+    color: #218653;
+}
+
+.icon-database {
+    background: #f0eaff;
+    color: #7550bd;
+}
+
+
+/* Deskripsi per kategori */
+
+.category-card h3 {
+    margin: 0 0 9px;
+    font-size: 22px;
+    line-height: 1.4;
+}
+
+.category-card p {
+    margin: 0 0 18px;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* Istilah per kategori */
+
+.category-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: auto;
+}
+
+.category-tags span {
+    display: inline-block;
+    padding: 4px 9px;
+    background: #f5f6f8;
+    color:var(--muted);
+    border: 1px solid #eceef1;
+    border-radius: 5px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+
+/* Footer */
+
+.footer {
+    border-top: 1px solid var(--border);
+    padding-top: 15px;
+    padding-bottom: 22px;
+
+    color: #777777;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}

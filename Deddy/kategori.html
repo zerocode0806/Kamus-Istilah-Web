@@ -20,101 +20,184 @@
       </nav>
     </header>
     <!-- Lanjutkan kode untuk isi halaman -->
-     <main class="container content">
+    
+<main class="container content">
 
-        <section class="category-intro">
-            <h2>Kategori Istilah Web</h2>
-            <p>
-                Istilah dalam pengembangan web dikelompokkan berdasarkan
-                fungsi dan penggunaannya agar lebih mudah dipahami.
+    <h2>Kategori Istilah Web</h2>
+
+    <p class="intro">
+        Istilah dalam pengembangan web dikelompokkan berdasarkan
+        fungsi dan penggunaannya agar lebih mudah dipahami.
+        Setiap kategori memiliki deskripsi dan istilah yang berkaitan.
+    </p>
+
+    <ul class="category-list">
+
+        <!-- FRONTEND -->
+        <li>
+            <strong>Frontend</strong>
+            <p class="category-description">
+                Frontend adalah bagian dari website yang berinteraksi
+                langsung dengan pengguna. Frontend mengatur struktur,
+                tampilan, dan interaksi halaman web.
             </p>
-        </section>
 
-        <section class="category-grid">
+            <ul>
+                <li>
+                    <strong>Bahasa Pemrograman dan Markup</strong>
+                    <p class="category-description">
+                        Bahasa dan markup digunakan untuk membangun
+                        struktur serta mengatur tampilan halaman web.
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>HTML</strong> — bahasa markup untuk
+                            menyusun struktur halaman web.
+                        </li>
+                        <li>
+                            <strong>CSS</strong> — bahasa stylesheet untuk
+                            mengatur warna, ukuran, dan tata letak.
+                        </li>
+                        <li>
+                            <strong>JavaScript</strong> — bahasa pemrograman
+                            untuk membuat halaman web interaktif.
+                        </li>
+                    </ul>
+                </li>
 
-            <!-- KATEGORI 1 -->
-            <article class="category-card">
-                <div class="category-icon icon-html">&lt;/&gt;</div>
-                <h3>HTML</h3>
-                <p>
-                    HTML merupakan bahasa markup yang digunakan untuk
-                    menyusun struktur halaman web, seperti judul,
-                    paragraf, gambar, tautan, dan tabel.
-                </p>
-                <div class="category-tags">
-                    <span>Elemen</span>
-                    <span>Tag</span>
-                    <span>Struktur</span>
-                </div>
-            </article>
+                <li>
+                    <strong>Konsep</strong>
+                    <p class="category-description">
+                        Konsep frontend membantu membuat website yang
+                        nyaman digunakan pada berbagai perangkat.
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Responsive Design</strong> — teknik
+                            menyesuaikan tampilan dengan ukuran layar.
+                        </li>
+                        <li>
+                            <strong>Aksesibilitas</strong> — prinsip
+                            membuat website dapat digunakan oleh berbagai
+                            pengguna, termasuk penyandang disabilitas.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
 
-            <!-- KATEGORI 2 -->
-            <article class="category-card">
-                <div class="category-icon icon-css">#</div>
-                <h3>CSS</h3>
-                <p>
-                    CSS digunakan untuk mengatur tampilan halaman web,
-                    meliputi warna, ukuran teks, jarak, tata letak,
-                    animasi, dan desain responsif.
-                </p>
-                <div class="category-tags">
-                    <span>Warna</span>
-                    <span>Layout</span>
-                    <span>Style</span>
-                </div>
-            </article>
+        <!-- BACKEND -->
+        <li>
+            <strong>Backend</strong>
+            <p class="category-description">
+                Backend merupakan bagian website yang bekerja di sisi
+                server. Bagian ini menangani logika aplikasi, pengolahan
+                data, autentikasi, dan komunikasi dengan database.
+            </p>
 
-            <!-- KATEGORI 3 -->
-            <article class="category-card">
-                <div class="category-icon icon-js">JS</div>
-                <h3>JavaScript</h3>
-                <p>
-                    JavaScript adalah bahasa pemrograman yang membuat
-                    halaman web interaktif, misalnya melalui tombol,
-                    validasi formulir, dan perubahan konten dinamis.
-                </p>
-                <div class="category-tags">
-                    <span>Interaktif</span>
-                    <span>Event</span>
-                    <span>Logika</span>
-                </div>
-            </article>
+            <ul>
+                <li>
+                    <strong>Bahasa Pemrograman</strong>
+                    <p class="category-description">
+                        Bahasa backend digunakan untuk menjalankan logika
+                        aplikasi dan memproses permintaan pengguna.
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>PHP</strong> — bahasa pemrograman yang
+                            banyak digunakan untuk pengembangan web.
+                        </li>
+                        <li>
+                            <strong>Python</strong> — bahasa pemrograman
+                            yang dapat digunakan untuk membangun layanan
+                            dan aplikasi web.
+                        </li>
+                    </ul>
+                </li>
 
-            <!-- KATEGORI 4 -->
-            <article class="category-card">
-                <div class="category-icon icon-network">↔</div>
-                <h3>Jaringan</h3>
-                <p>
-                    Jaringan komputer menghubungkan perangkat agar
-                    dapat bertukar data. Dalam web, istilah penting
-                    meliputi HTTP, HTTPS, IP address, dan DNS.
-                </p>
-                <div class="category-tags">
-                    <span>HTTP</span>
-                    <span>DNS</span>
-                    <span>IP Address</span>
-                </div>
-            </article>
+                <li>
+                    <strong>Layanan</strong>
+                    <p class="category-description">
+                        Layanan backend menghubungkan aplikasi dengan
+                        data dan menyediakan fungsi yang dibutuhkan
+                        oleh frontend.
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>API</strong> — antarmuka yang
+                            memungkinkan aplikasi saling berkomunikasi.
+                        </li>
+                        <li>
+                            <strong>Server</strong> — sistem yang menerima
+                            permintaan dan memberikan respons kepada klien.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
 
-            <!-- KATEGORI 5 -->
-            <article class="category-card">
-                <div class="category-icon icon-database">DB</div>
-                <h3>Basis Data</h3>
-                <p>
-                    Basis data digunakan untuk menyimpan, mengelola,
-                    dan mengambil informasi. Contohnya MySQL,
-                    PostgreSQL, tabel, query, dan relasi data.
-                </p>
-                <div class="category-tags">
-                    <span>MySQL</span>
-                    <span>Tabel</span>
-                    <span>Query</span>
-                </div>
-            </article>
+        <!-- DATABASE -->
+        <li>
+            <strong>Database</strong>
+            <p class="category-description">
+                Database atau basis data adalah sistem penyimpanan
+                informasi yang terorganisasi sehingga data dapat
+                dikelola, dicari, diperbarui, dan digunakan kembali.
+            </p>
 
-        </section>
+            <ul>
+                <li>
+                    <strong>MySQL</strong>
+                    <p class="category-description">
+                        MySQL merupakan sistem manajemen basis data
+                        relasional yang menggunakan SQL untuk mengelola
+                        data dalam tabel.
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Tabel</strong> — struktur yang
+                            menyimpan data dalam baris dan kolom.
+                        </li>
+                        <li>
+                            <strong>Query</strong> — perintah untuk
+                            mengambil atau memanipulasi data.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
 
-    </main>
+        <!-- DEPLOYMENT -->
+        <li>
+            <strong>Deployment</strong>
+            <p class="category-description">
+                Deployment adalah proses menempatkan aplikasi website
+                pada lingkungan server agar dapat diakses oleh pengguna
+                melalui jaringan internet.
+            </p>
+
+            <ul>
+                <li>
+                    <strong>Domain</strong>
+                    <p class="category-description">
+                        Domain merupakan nama alamat website yang
+                        digunakan pengguna untuk mengakses sebuah situs.
+                    </p>
+                </li>
+                <li>
+                    <strong>Hosting</strong>
+                    <p class="category-description">
+                        Hosting adalah layanan yang menyediakan sumber
+                        daya server untuk menyimpan file dan menjalankan
+                        website agar dapat diakses secara online.
+                    </p>
+                </li>
+            </ul>
+        </li>
+
+    </ul>
+
+</main>
 
     <!-- akhir dari kode -->
     <footer class="container footer">

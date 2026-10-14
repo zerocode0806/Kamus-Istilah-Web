@@ -14,27 +14,17 @@ body {
     line-height: 1.6;
 }
 
-/* Container responsif untuk ukuran website */
-.container {
-    width: 100%;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding-left: 24px;
-    padding-right: 24px;
-}
-
 /* Header */
-header .container {
-    padding-top: 16px;
-    padding-bottom: 4px;
-}
 header {
-    padding: 1% 30px;
+    border-bottom: 1px solid var(--bd);
 }
 header h1 {
-    margin: 0;
+    padding: 22px 20px 6px;
+    margin: 0 auto;
     font-size: 30px;
     font-weight: bold;
+    max-width: 900px;
+ 
 }
 
 /* Navigasi */
@@ -46,13 +36,16 @@ nav {
 }
 
 nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-    list-style: none;
-    margin: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 22px;
+  font:
+    0.9rem Arial,
+    sans-serif;
 }
 
 nav a {
@@ -72,9 +65,10 @@ main {
     padding-bottom: 30px;
 }
 
-main > h2 {
-    margin: 0 0 16px;
-    font-size: 25px;
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px 50px;
 }
 
 
@@ -104,7 +98,7 @@ main {
     font-weight: bold;
     margin-top: 20px;
     padding-left: 12px;
-    border-left: 3px solid #f81111;
+    border-left: 3px solid #8b0000;
 }
 
 /* Definisi istilah */
